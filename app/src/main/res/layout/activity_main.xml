@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="top"
+    android:orientation="vertical"
+    android:visibility="visible"
     tools:context=".MainActivity">
 
     <ImageView
@@ -19,8 +19,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/redRobot"
@@ -36,35 +36,30 @@
 
     </LinearLayout>
 
-    <View
-        android:id="@+id/verticalDivider"
-        android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:background="@color/white" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:orientation="horizontal">
 
-        <ImageView
+        <ImageButton
             android:id="@+id/clockwiseArrow"
-            android:layout_width="52dp"
-            android:layout_height="52dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/roundcorner"
+            android:contentDescription="@string/clockwiseArrowButton"
             app:srcCompat="@drawable/rot_clockwise" />
 
-        <View
-            android:id="@+id/horizontalDivider"
-            android:layout_width="52dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0"
-            android:background="@color/white" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/antiClockwiseArrow"
-            android:layout_width="52dp"
-            android:layout_height="52dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/roundcorner"
+            android:contentDescription="@string/antiClockwiseArrowButton"
             app:srcCompat="@drawable/rot_counter" />
 
     </LinearLayout>

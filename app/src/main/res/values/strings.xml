@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Robot Homework</string>
+    <string name="clockwiseArrowButton">Clockwise Arrow Button</string>
+    <string name="antiClockwiseArrowButton">Anti-clockwise Arrow Button</string>
 </resources>
