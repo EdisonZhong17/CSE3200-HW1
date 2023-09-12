@@ -25,6 +25,11 @@ class MainActivity : AppCompatActivity() {
         yellowRobot.setOnClickListener{ view : View -> toggleImg() }
     }
 
+    /*
+     * turnCount == 0 -> yellow is large
+     * turnCount == 1 -> red is large
+     * turnCount == 2 -> white is large
+     */
     private fun toggleImg() {
         turnCount++
         if (turnCount > 3) {
